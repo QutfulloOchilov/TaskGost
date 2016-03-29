@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:TaskWithCSharp"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -13,12 +20,17 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
-        <StackPanel Grid.Column="0">
-            
+
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+            <Button Name="uiTask1" Content="Task 1" Click="uiTask1_Click"/>
+            <Button Name="uiTask2" Content="Task 2" Click="uiTask2_Click"/>
+            <Button Name="uiTask3" Content="Task 3" Click="uiTask3_Click"/>
+            <Button Name="uiTask9" Content="Task 9" Click="uiTask9_Click"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1">
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <Button Name="uiTask15" Content="Task 15" Click="uiTask15_Click"/>
+            <Button Name="uiTask23" Content="Task 23" Click="uiTask23_Click"/>
             <Button Name="uiTask24" Content="Task 24" Click="uiTask24_Click"/>
         </StackPanel>
         
